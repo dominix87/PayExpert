@@ -20,10 +20,25 @@ var Index =
 
     $('input[name=phone]').mask('+38(099)999-99-99');
 
-    Index.magnificPopUp();
 
+    Index.magnificPopUp();
+    Index.fixedHeader();
   },
 
+
+  fixedHeader:function(){
+    $(window).scroll(function()
+    {
+      if ($(this).scrollTop() > 20)
+      {
+        $('header').addClass('fixed');
+      }
+      if ($(this).scrollTop() < 20)
+      {
+        $('header').removeClass('fixed');
+      }
+    });
+  },
 
 
   magnificPopUp: function(){
@@ -171,11 +186,11 @@ var Index =
   },
 
   openMenu:function(){
-    $('#mobMenu').css('left', 0);
+    $('#mobMenu').css('right', 0);
   },
 
   closeMenu:function(){
-    $('#mobMenu').css('left', '-100%');
+    $('#mobMenu').css('right', '-100%');
   },
 
   showFormSpec:function(fThis){
