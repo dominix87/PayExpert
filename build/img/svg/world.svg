@@ -18,7 +18,7 @@
 	  }
 	}
 	.jumping{
-		animation: upAndDown 4s linear infinite;
+		animation: upAndDown 2s linear infinite;
 	}
 </style>
 	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="8.5452" y1="569.3837" x2="1147.3127" y2="569.3837">
