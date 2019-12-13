@@ -23,7 +23,94 @@ var Index =
 
     Index.magnificPopUp();
     Index.fixedHeader();
+    Index.parallaxInit();
   },
+
+
+  parallaxInit: function(){
+    $('body').parallax({
+      'elements': [
+        {
+          'selector': '#parallax1',
+          'properties': {
+            'y': {
+              'top': {
+                'initial': -7.8,
+                'multiplier': 0.002,
+                'unit': '%',
+                'invert': true
+              }
+            },
+            'x': {
+              'left': {
+                'initial': -11,
+                'multiplier': 0.002,
+                'unit': '%',
+                'invert': true
+              }
+            }
+          }
+        },
+        {
+          'selector': '#parallax2',
+          'properties': {
+            'y': {
+              'top': {
+                'initial': 18,
+                'multiplier': 0.003,
+                'unit': '%',
+                'invert': false
+              }
+            },
+            'x': {
+              'left': {
+                'initial': -63,
+                'multiplier': 0.002,
+                'unit': '%',
+                'invert': true
+              }
+            }
+          }
+        },
+        {
+          'selector': '#parallax3',
+          'properties': {
+            'y': {
+              'top': {
+                'initial': 64,
+                'multiplier': 0.002,
+                'unit': '%',
+                'invert': false
+              }
+            },
+            'x': {
+              'left': {
+                'initial': -20,
+                'multiplier': 0.003,
+                'unit': '%',
+                'invert': true
+              }
+            }
+          }
+        },
+        {
+          'selector': '#parallax4',
+          'properties': {
+            'y': {
+              'top': {
+                'initial': -64,
+                'multiplier': 0.003,
+                'unit': '%',
+                'invert': true
+              }
+            }
+          }
+        }
+      ]
+    });
+  },
+
+
 
 
   fixedHeader:function(){
