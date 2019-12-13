@@ -24,8 +24,15 @@ var Index =
     Index.magnificPopUp();
     Index.fixedHeader();
     Index.parallaxInit();
+    Index.tinyAnimation();
   },
 
+  tinyAnimation: function(){
+    $('.animate1').addClass("hidden").viewportChecker({
+      classToAdd: 'animated fadeInUp',
+      offset: 200
+    });
+  },
 
   parallaxInit: function(){
     $('body').parallax({
