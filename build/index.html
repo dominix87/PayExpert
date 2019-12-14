@@ -25,7 +25,7 @@
             <ul>
               <li><a href="#section3" onclick="Index.go_to(this, event)">Возможности</a></li>
               <li><a href="#section5" onclick="Index.go_to(this, event)">Преимущества</a></li>
-              <li><a href="#section6" onclick="Index.go_to(this, event)">Выбрать Pay Exper POS</a></li>
+              <li><a href="#section6" onclick="Index.go_to(this, event)">Выбрать Pay Expert POS</a></li>
             </ul>
             <button class="closeMenu" onclick="Index.closeMenu();">
                   <svg class="icon icon-closeModal ">
@@ -33,7 +33,10 @@
                   </svg>
             </button>
           </nav>
-          <div class="langBox"><a class="active" href="#">Rus</a><span class="seapr">/</span><a href="#">Eng</a><span class="seapr">/</span><a href="#">Deu</a></div>
+          <div class="langBox">
+            <div class="langBtn" onclick="Index.openLangBox(this)"><span>Rus</span></div>
+            <div class="langMenu"><a href="#">Eng</a><a href="#">Deu</a></div>
+          </div>
           <button class="openMenu" onclick="Index.openMenu()">
                 <svg class="icon icon-menuBurger ">
                   <use xlink:href="img/svg/sprite.svg#menuBurger"></use>
@@ -416,7 +419,7 @@
     <footer>
       <div class="footerTop">
         <div class="siteWidth container-fluid">
-          <div class="innerWrapper"><a class="logo" href="/"><span>pay</span> Expert</a><a class="upArrow" href="#section1" onclick="Index.go_to(this, event)">
+          <div class="innerWrapper"><a class="logo" href="#section1" onclick="Index.go_to(this, event)"><span>pay</span> Expert</a><a class="upArrow" href="#section1" onclick="Index.go_to(this, event)">
                   <svg class="icon icon-upArrow ">
                     <use xlink:href="img/svg/sprite.svg#upArrow"></use>
                   </svg><span>Вверх сайта</span></a>

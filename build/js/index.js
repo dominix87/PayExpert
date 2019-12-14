@@ -279,6 +279,11 @@ var Index =
     });
   },
 
+  openLangBox: function(fThis){
+    $(fThis).toggleClass('active');
+    $('.langMenu', '.langBox').toggleClass('active');
+  },
+
   openMenu:function(){
     $('#mobMenu').css('right', 0);
   },
