@@ -34,8 +34,19 @@
             </button>
           </nav>
           <div class="langBox">
-            <div class="langBtn" onclick="Index.openLangBox(this)"><span>Rus</span></div>
-            <div class="langMenu"><a href="#">Eng</a><a href="#">Deu</a></div>
+            <div class="langBtn" onclick="Index.openLangBox(this)">
+              <div class="item">
+                <div class="flag" style="background-image:url(img/svg/ru.svg)"></div><span>Rus</span>
+              </div>
+            </div>
+            <div class="langMenu">
+              <div class="item">
+                <div class="flag" style="background-image:url(img/svg/gb.svg)"></div><a href="#">Eng</a>
+              </div>
+              <div class="item">
+                <div class="flag" style="background-image:url(img/svg/de.svg)"></div><a href="#">Deu</a>
+              </div>
+            </div>
           </div>
           <button class="openMenu" onclick="Index.openMenu()">
                 <svg class="icon icon-menuBurger ">
